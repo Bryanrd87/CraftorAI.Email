@@ -4,6 +4,16 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>CraftorAI.Email</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>CraftorAI</Authors>
+    <Company>CraftorAI</Company>
+    <Description>Shared email library for CraftorAI using Resend.</Description>
+    <RepositoryUrl>https://github.com/Bryanrd87/CraftorAI.Email</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/Bryanrd87/CraftorAI.Email</PackageProjectUrl>
+    <PackageTags>CraftorAI;Email;Resend</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +21,10 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.1" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
