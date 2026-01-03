@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>CraftorAI.Email</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>CraftorAI</Authors>
     <Company>CraftorAI</Company>
     <Description>Shared email library for CraftorAI using Resend.</Description>
