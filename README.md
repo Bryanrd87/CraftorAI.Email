@@ -19,34 +19,34 @@ instead of manual syncing.
 
 Add the private feed to your `nuget.config`:
 
-\```xml
+```xml
 <packageSources>
   <add key="github" value="https://nuget.pkg.github.com/Bryanrd87/index.json" />
 </packageSources>
-\```
+```
 
 Authenticate with a GitHub Personal Access Token (`read:packages` 
 scope) as your NuGet source credentials, then:
 
-\```bash
+```bash
 dotnet add package CraftorAI.Email
-\```
+```
 
 ## Usage
 
-\```csharp
+```csharp
 // Program.cs
 builder.Services.AddCraftorEmailServices(builder.Configuration);
-\```
+```
 
-\```csharp
+```csharp
 // Anywhere via DI
 public class AuthController(IEmailService emailService)
 {
     public async Task SendVerification(string email, string url)
         => await emailService.SendEmailVerificationAsync(email, url);
 }
-\```
+```
 
 ## Tech Stack
 
